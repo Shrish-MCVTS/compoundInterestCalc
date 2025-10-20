@@ -1,0 +1,16 @@
+#Shrish Kushwaha
+#Date: 10/20/2025
+#Compound Interest Calculator
+#Extra:
+
+
+principleAmount = float(input("How much money are currently investing?"))
+timesCompoundedPerYear = float(input("How many times is this investment getting compounded?"))
+yearsInvested = float(input("How many years will this investment be invested?"))
+interestRate = float(input("What is the annual interest rate?(Type decimal form)"))
+
+
+futureValue = principleAmount*(1+ interestRate/timesCompoundedPerYear)**timesCompoundedPerYear*yearsInvested
+interest = futureValue-principleAmount
+
+print(f'\033[91mThe future value of your investment is:{futureValue :,.2f}$\nThe interest/profit gained is: {interest: ,.2f}$\033[0m')
