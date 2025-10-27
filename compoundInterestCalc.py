@@ -16,4 +16,4 @@ interest = futureValue-principalAmount
 print(f'\033[91mThe future value of your investment is:{futureValue :,.2f}$\nThe interest/profit gained is: {interest: ,.2f}$\033[0m')
 
 
-turtleGraphic.drawCordPlane()
+turtleGraphic.drawCordPlane(yearsInvested//2,futureValue//5)
