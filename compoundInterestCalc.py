@@ -1,12 +1,9 @@
 #Shrish Kushwaha
 #Date: 10/20/2025
 #Compound Interest Calculator
-#Extra:Used turtle graphics to plot the growth of investment over time
-<<<<<<< HEAD
+#Extra: Used turtle graphics to plot the growth of investment over time
 
 #Importing turtleGraphic module
-=======
->>>>>>> ce0f070dc2a3a1ca5d244f9d516aa3c78e6ac108
 import turtleGraphic
 import turtle
 t = turtle.Turtle()
@@ -17,11 +14,8 @@ screen.setup(width = 800 , height = 800)
 #Variables
 offset = 100
 futureValue = []
-<<<<<<< HEAD
 #User Inputs
-=======
 
->>>>>>> ce0f070dc2a3a1ca5d244f9d516aa3c78e6ac108
 principalAmount = float(input("How much money are currently investing?"))
 principalAmountCOPY = principalAmount
 timesCompoundedPerYear = float(input("How many times is this investment getting compounded per year?"))
@@ -30,22 +24,18 @@ interestRate = float(input("What is the annual interest rate?(Type decimal form)
 interestMade = 0
 <<<<<<< HEAD
 #Calculations
-=======
->>>>>>> ce0f070dc2a3a1ca5d244f9d516aa3c78e6ac108
+
 for i in range(yearsInvested):
     principalAmount = principalAmount * (1 + (interestRate / timesCompoundedPerYear))**(timesCompoundedPerYear*yearsInvested)
     futureValue.append(principalAmount)
 interestMade = futureValue[0] - principalAmountCOPY
-<<<<<<< HEAD
+
 #Output
 print(f'\033[91mThe future value of your investment is:{futureValue[0] :,.2f}$\nThe interest/profit gained is:{interestMade: ,.2f}$\033[0m')
 
 #Plotting the graph using turtle graphics
-=======
 print(f'\033[91mThe future value of your investment is:{futureValue[0] :,.2f}$\nThe interest/profit gained is:{interestMade: ,.2f}$\033[0m')
 
-
->>>>>>> ce0f070dc2a3a1ca5d244f9d516aa3c78e6ac108
 turtleGraphic.drawCordPlane(yearsInvested//2,futureValue[0]//5, t)
 for i in range(yearsInvested):
     turtleGraphic.plotPoints(yearsInvested*(i+1),futureValue[i], yearsInvested//2,futureValue[0]//5, t)
