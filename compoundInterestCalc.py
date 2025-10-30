@@ -22,7 +22,6 @@ timesCompoundedPerYear = float(input("How many times is this investment getting 
 yearsInvested = int(input("How many years will this investment be invested?"))
 interestRate = float(input("What is the annual interest rate?(Type decimal form)"))
 interestMade = 0
-<<<<<<< HEAD
 #Calculations
 
 for i in range(yearsInvested):
